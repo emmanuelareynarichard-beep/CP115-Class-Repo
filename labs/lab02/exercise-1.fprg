@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-1"/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-23 06:22:53 PM"/>
+        <attribute name="created" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMjM7MDY6MDQ6NTggUE07MjU0Nw=="/>
+        <attribute name="edited" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMjM7MDY6MjI6NTMgUE07MjsyNjUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="AmountOfRinggit" type="Real" array="False" size=""/>
+            <declare name="ExchangeRate" type="Real" array="False" size=""/>
+            <declare name="Commission" type="Real" array="False" size=""/>
+            <declare name="AmountOfBahtreceived" type="Real" array="False" size=""/>
+            <input variable="AmountOfRinggit"/>
+            <input variable="ExchangeRate"/>
+            <assign variable="Commission" expression="AmountOfRinggit*0.02"/>
+            <assign variable="AmountOfBahtreceived" expression="(AmountOfRinggit-Commission) * ExchangeRate"/>
+            <output expression="AmountOfBahtreceived" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
