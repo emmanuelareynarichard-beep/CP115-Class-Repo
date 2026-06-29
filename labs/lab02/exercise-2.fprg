@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-2"/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-29 11:50:28 PM"/>
+        <attribute name="created" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMjk7MTE6Mzg6NDQgUE07MjU1MQ=="/>
+        <attribute name="edited" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMjk7MTE6NTA6MjggUE07MTsyNjU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LengthInCm, PricePerMeter, LengthInMeter, TotalLength, TotalPrice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Lenght in cm:&quot;" newline="True"/>
+            <input variable="LengthInCm"/>
+            <output expression="&quot;Enter price per meter(RM):&quot;" newline="True"/>
+            <output expression="PricePerMeter" newline="True"/>
+            <assign variable="LengthInMeters" expression="LengthInCm / 100"/>
+            <assign variable="TotalLength" expression="LengthInMeters * 1.10"/>
+            <assign variable="TotalPrice" expression="TotalLength * PricePerMeter"/>
+            <output expression="&quot;Total length to order: &quot; &amp; TotalLength &amp; &quot; meters&quot;" newline="True"/>
+            <output expression="&quot;Total price: RM &quot; &amp; TotalPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
