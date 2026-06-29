@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-3"/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-29 11:31:49 PM"/>
+        <attribute name="created" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMjk7MTE6MjA6MDEgUE07MjUzNQ=="/>
+        <attribute name="edited" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMjk7MTE6MzE6NDkgUE07MTsyNjU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PowerInWatts, Hour, PowerInkW, CostPerNight, CosPerMoney" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the power comsumption in watts :&quot;" newline="True"/>
+            <input variable="PowerInWatts"/>
+            <output expression="&quot;Enter the number of hours run per night :&quot;" newline="True"/>
+            <input variable="Hours"/>
+            <assign variable="PowerInkW" expression="PowerInWatts/1000"/>
+            <assign variable="CostPerNight" expression="PowerInk*Hours*0.218"/>
+            <assign variable="CostPerMonth" expression="CostPerNight*30"/>
+            <output expression="&quot;The cost to run the air conditioner each night is RM&quot; &amp; CostPerNight" newline="True"/>
+            <output expression="&quot;The cost across a whole month of 30 days is RM is RM&quot; &amp; CostPerMonth" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
