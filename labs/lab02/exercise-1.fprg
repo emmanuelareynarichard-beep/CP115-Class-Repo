@@ -4,22 +4,21 @@
         <attribute name="name" value="exercise-1"/>
         <attribute name="authors" value="PC"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-23 06:43:15 PM"/>
-        <attribute name="created" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMjM7MDY6MDQ6NTggUE07MjU0Nw=="/>
-        <attribute name="edited" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMjM7MDY6NDM6MTUgUE07MzsyNjUz"/>
+        <attribute name="saved" value="2026-06-30 12:26:39 AM"/>
+        <attribute name="created" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMzA7MTI6MjE6MjEgQU07MjUxNg=="/>
+        <attribute name="edited" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDYtMzA7MTI6MjY6MzggQU07MTsyNjM3"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="AmountOfRinggit" type="Real" array="False" size=""/>
-            <declare name="ExchangeRate" type="Real" array="False" size=""/>
-            <declare name="Commission" type="Real" array="False" size=""/>
-            <declare name="AmountOfBahtreceived" type="Real" array="False" size=""/>
+            <declare name="AmountOfRinggit, ExchangeRate, Commission, AmountOfBahtreceived" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter amount of Malaysian Ringgit: &quot;" newline="True"/>
             <input variable="AmountOfRinggit"/>
+            <output expression="&quot;Enter today's exchange rate (Baht per 1 Ringgit): &quot;" newline="True"/>
             <input variable="ExchangeRate"/>
-            <assign variable="Commission" expression="AmountOfRinggit*0.02"/>
-            <assign variable="AmountOfBahtreceived" expression="(AmountOfRinggit-Commission) * ExchangeRate"/>
-            <output expression="AmountOfBahtreceived" newline="True"/>
+            <assign variable="Commission" expression="AmountOfRinggit * 0.02"/>
+            <assign variable="AmountOfBahtreceived" expression="(AmountOfRinggit - Commission) * ExchangeRate"/>
+            <output expression="&quot;Amount of Thai Baht received: &quot; &amp; AmountOfBahtreceived" newline="True"/>
         </body>
     </function>
 </flowgorithm>
