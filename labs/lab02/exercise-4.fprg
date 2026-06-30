@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-4"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-30 02:17:19 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0zMDswMTo1ODowMCBQTTsyNzQ4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0zMDswMjoxNzoxOSBQTTsyOzI4NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Distance" type="Real" array="False" size=""/>
+            <declare name="FuelNeeded" type="Real" array="False" size=""/>
+            <declare name="TotalCost" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the distance of your journey in kilometres:&quot;" newline="True"/>
+            <input variable="Distance"/>
+            <assign variable="FuelNeeded" expression="(Distance/100)"/>
+            <assign variable="TotalCost" expression="FuelNeeded*2.05"/>
+            <output expression="&quot;The total cost for petrol is RM&quot; &amp; TotalCost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
