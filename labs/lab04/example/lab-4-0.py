@@ -1,30 +1,7 @@
-<?xml version="1.0"?>
-<flowgorithm fileversion="4.2">
-    <attributes>
-        <attribute name="name" value="lab4"/>
-        <attribute name="authors" value="User"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-06 08:19:19 AM"/>
-        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wNjswNzo1NDo0MCBBTTsyNzQz"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wNjswODoxOToxOSBBTTsyOzI4NjA="/>
-    </attributes>
-    <function name="Main" type="None" variable="">
-        <parameters/>
-        <body>
-            <declare name="magazineNumber" type="Integer" array="False" size=""/>
-            <input variable="magazineNumber"/>
-            <declare name="unitPrice" type="Integer" array="False" size=""/>
-            <if expression="magazineNumber &gt;= 5">
-                <then>
-                    <assign variable="unitPrice" expression="5"/>
-                </then>
-                <else>
-                    <assign variable="unitPrice" expression="7"/>
-                </else>
-            </if>
-            <declare name="finalPrice" type="Integer" array="False" size=""/>
-            <assign variable="finalPrice" expression="magazineNumber * unitPrice"/>
-            <output expression="finalPrice" newline="True"/>
-        </body>
-    </function>
-</flowgorithm>
+magazineNumber = int(input())
+if magazineNumber >= 5:
+    unitPrice = 5
+else:
+    unitPrice = 7
+finalPrice = magazineNumber * unitPrice
+print(finalPrice)
