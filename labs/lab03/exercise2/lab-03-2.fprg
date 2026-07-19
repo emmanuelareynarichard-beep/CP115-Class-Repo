@@ -4,12 +4,19 @@
         <attribute name="name" value="lab-03-2"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-30 03:37:41 PM"/>
+        <attribute name="saved" value="2026-07-19 07:36:56 PM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0zMDswMzozNzoxNyBQTTsyNzU1"/>
         <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0zMDswMzozNzo0MSBQTTsxOzI4NjA="/>
+        <attribute name="edited" value="UEM7TEFQVE9QLUdVTTZMUE5SOzIwMjYtMDctMTk7MDc6MzY6NTYgUE07MTsyNjY1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="numNight" type="Integer" array="False" size=""/>
+            <declare name="totalPayment" type="Real" array="False" size=""/>
+            <input variable="numNight"/>
+            <assign variable="totalPayment" expression="(numNight *250)* 0.15"/>
+            <output expression="totalPayment" newline="True"/>
+        </body>
     </function>
 </flowgorithm>
