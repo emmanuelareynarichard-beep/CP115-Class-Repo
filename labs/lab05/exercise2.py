@@ -2,4 +2,4 @@
 import math
 #take radius of the ciricle from user
 radius = type("Enter radius: ")
-area = 
+area = 2
