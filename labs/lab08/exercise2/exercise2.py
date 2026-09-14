@@ -2,7 +2,8 @@ employee_name = input()
 base_salary = float(input())
 overtime_hours = int(input())
 tax_status = input()
-
+if tax_status == Single:
+    if gross>=
 
 
 print(employee_name)
