@@ -1,6 +1,7 @@
 minutes = int(input())
-customer = 0
-while total_minutes<minutes:
+customers = 0
+total_minutes = 0
+while minutes<60:
     customer += 1
     print(f"Served customer {customer},{total_minutes} ")
 
